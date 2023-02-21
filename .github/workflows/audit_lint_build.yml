@@ -51,7 +51,7 @@ jobs:
         run: echo "::set-output name=dir::$(yarn cache dir)"
         continue-on-error: true
 
-      - uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # pin@v2
+      - uses: actions/cache@69d9d449aced6a2ede0bc19182fadc3a0a42d2b0 # pin@v2
         id: yarn-cache
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
@@ -115,7 +115,7 @@ jobs:
         run: echo "::set-output name=dir::$(yarn cache dir)"
         continue-on-error: true
 
-      - uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # pin@v2
+      - uses: actions/cache@69d9d449aced6a2ede0bc19182fadc3a0a42d2b0 # pin@v2
         id: yarn-cache
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
